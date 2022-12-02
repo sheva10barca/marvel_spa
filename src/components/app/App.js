@@ -1,5 +1,5 @@
 import {lazy, Suspense} from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {HashRouter, Route, Switch, } from 'react-router-dom';
 
 import AppHeader from "../appHeader/AppHeader";
 import Spinner from '../spinner/Spinner';
@@ -13,7 +13,7 @@ const SinglePage = lazy(() => import('../pages/SinglePage'));
 
 const App = () => {
     return (
-        <Router>
+        <HashRouter basename={process.env.PUBLIC_URL}>
             <div className="app">
                 <AppHeader/>
                 <main>
@@ -38,7 +38,7 @@ const App = () => {
                     </Suspense>
                 </main>
             </div>
-        </Router>
+        </HashRouter>
     )
 }
 
