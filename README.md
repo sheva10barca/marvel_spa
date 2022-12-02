@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `github pages`
+
+[https://sheva10barca.github.io/marvel_spa/#/](https://sheva10barca.github.io/marvel_spa/#/)
 
 ## Available Scripts
 
